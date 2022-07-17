@@ -55,3 +55,7 @@ class Booking(webdriver.Chrome):
         add_one = self.find_element(By.CSS_SELECTOR, 'button[data-bui-ref="input-stepper-add-button"]')
         while(int(act_num_adults.text)<num_adults):
             add_one.click()    
+
+    def submit(self):
+        submit_button = self.find_element(By.CSS_SELECTOR, 'button[data-sb-id="main"]')
+        submit_button.click()

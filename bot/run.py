@@ -9,3 +9,5 @@ with Booking(teardown=False) as bot:
     bot.select_place_to_go('New York')
     bot.select_date(check_in='2022-07-18',check_out='2022-07-22')
     bot.select_num_adults(5)
+    bot.submit()
+
